@@ -4,7 +4,7 @@ content-title: Discussion With Chatgpt On Infimum Curve Existence
 Yes! Introducing the norm  
 
 $$
-\|\gamma\| = |\gamma(0)| + \sup_{t \in [0,1]} |\gamma(t)| + \sup_{t \in [0,1]} |\gamma'(t)|
+\lVert \gamma\lVert  = |\gamma(0)| + \sup_{t \in [0,1]} |\gamma(t)| + \sup_{t \in [0,1]} |\gamma'(t)|
 $$
 
 makes the space **$ C^1([0,1], \mathbb{H}^2) $ complete**, turning it into a **Banach space**. This norm is stronger than the standard supremum norm on $ C^1 $, ensuring uniform convergence of both $ \gamma $ and $ \gamma' $. Let’s analyze how this impacts the problem.
@@ -25,9 +25,9 @@ This is enough to apply the **dominated convergence theorem**, provided $ \text{
 Since the space is **complete**, we need to check whether a suitable subset is **precompact** to guarantee the existence of an infimum.
 
 A subset of $ C^1([0,1], \mathbb{H}^2) $ is compact if:
-1. **Bounded in $ \|\gamma\| $**: There exist constants $ M, M_1 $ such that  
+1. **Bounded in $ \lVert \gamma\rVert $**: There exist constants $ M, M_1 $ such that  
    $$
-   |\gamma(0)| \leq M, \quad \|\gamma\|_\infty \leq M, \quad \|\gamma'\|_\infty \leq M_1.
+   |\gamma(0)| \leq M, \quad \lVert \gamma\rVert _\infty \leq M, \quad \lVert \gamma'\rVert _\infty \leq M_1.
    $$
    This ensures total boundedness.
 
@@ -67,9 +67,11 @@ The **Arzelà–Ascoli theorem** gives conditions under which a set of functions
 ### **Step 1: Arzelà–Ascoli Theorem (Classical Form)**
 The theorem states that a subset $ S $ of $ C([0,1], \mathbb{R}^n) $ is **relatively compact** (i.e., its closure is compact) **if and only if**:
 1. **Uniform Boundedness**: There exists a constant $ M $ such that for all $ \gamma \in S $,  
+
    $$
-   \|\gamma\|_{\infty} = \sup_{t \in [0,1]} |\gamma(t)| \leq M.
+   \lVert \gamma \rVert _{\infty} = \sup_{t \in [0,1]} |\gamma(t)| \leq M.
    $$
+
 2. **Equicontinuity**: Given any $ \epsilon > 0 $, there exists $ \delta > 0 $ such that for all $ \gamma \in S $ and for all $ t_1, t_2 $ satisfying $ |t_1 - t_2| < \delta $, we have  
    $$
    |\gamma(t_1) - \gamma(t_2)| < \epsilon.
@@ -82,7 +84,7 @@ If these conditions hold, then every sequence $ (\gamma_n) $ in $ S $ has a **un
 ### **Step 2: Extension to $ C^1([0,1], \mathbb{H}^2) $**
 Now, we are working in $ C^1([0,1], \mathbb{H}^2) $, which consists of continuously differentiable functions. The space is equipped with the norm:  
 $$
-\|\gamma\| = |\gamma(0)| + \sup_{t \in [0,1]} |\gamma(t)| + \sup_{t \in [0,1]} |\gamma'(t)|.
+\lVert \gamma\rVert = |\gamma(0)| + \sup_{t \in [0,1]} |\gamma(t)| + \sup_{t \in [0,1]} |\gamma'(t)|.
 $$
 To apply Arzelà–Ascoli, we need to check **relative compactness** in $ C^1 $, which means we must impose conditions on both $ \gamma $ and $ \gamma' $.
 
