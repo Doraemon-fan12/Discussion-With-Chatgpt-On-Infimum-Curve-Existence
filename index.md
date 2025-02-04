@@ -4,7 +4,7 @@ content-title: Discussion With Chatgpt On Infimum Curve Existence
 Yes! Introducing the norm  
 
 $$
-\lVert \gamma\lVert  = |\gamma(0)| + \sup_{t \in [0,1]} |\gamma(t)| + \sup_{t \in [0,1]} |\gamma'(t)|
+\lVert \gamma\rVert  = |\gamma(0)| + \sup_{t \in [0,1]} |\gamma(t)| + \sup_{t \in [0,1]} |\gamma'(t)|
 $$
 
 makes the space **$ C^1([0,1], \mathbb{H}^2) $ complete**, turning it into a **Banach space**. This norm is stronger than the standard supremum norm on $ C^1 $, ensuring uniform convergence of both $ \gamma $ and $ \gamma' $. Let’s analyze how this impacts the problem.
@@ -69,7 +69,7 @@ The theorem states that a subset $ S $ of $ C([0,1], \mathbb{R}^n) $ is **relati
 1. **Uniform Boundedness**: There exists a constant $ M $ such that for all $ \gamma \in S $,  
 
    $$
-   {\lVert \gamma \rVert}_{\infty} = \sup_{t \in [0,1]} |\gamma(t)| \leq M.
+   \lVert \gamma \rVert_{\infty} = \sup_{t \in [0,1]} |\gamma(t)| \leq M.
    $$
 
 2. **Equicontinuity**: Given any $ \epsilon > 0 $, there exists $ \delta > 0 $ such that for all $ \gamma \in S $ and for all $ t_1, t_2 $ satisfying $ |t_1 - t_2| < \delta $, we have  
