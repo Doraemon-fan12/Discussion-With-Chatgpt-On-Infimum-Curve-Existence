@@ -69,7 +69,7 @@ The theorem states that a subset $ S $ of $ C([0,1], \mathbb{R}^n) $ is **relati
 1. **Uniform Boundedness**: There exists a constant $ M $ such that for all $ \gamma \in S $,  
 
    $$
-   \lVert \gamma \rVert _{\infty} = \sup_{t \in [0,1]} |\gamma(t)| \leq M.
+   {\lVert \gamma \rVert}_{\infty} = \sup_{t \in [0,1]} |\gamma(t)| \leq M.
    $$
 
 2. **Equicontinuity**: Given any $ \epsilon > 0 $, there exists $ \delta > 0 $ such that for all $ \gamma \in S $ and for all $ t_1, t_2 $ satisfying $ |t_1 - t_2| < \delta $, we have  
